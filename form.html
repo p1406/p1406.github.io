@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<style type="text/css">
+#form{text-align: center;
+      background: orange;
+      }	
+fieldset{
+	width: 600px;
+	height: 300px
+	border-width: 10px;
+	border-color: orange;
+	border-right-style: dotted;
+	margin-left: 40px;
+	margin-top: 20px;
+	background: orange;
+}
+label{
+	font-family: fantasy;
+	font-size: 50px;
+    background: blue
+    color: orange;
+
+      
+}
+
+
+
+</style>
+<body bgcolor="blue">
+	<input type="search" name="search">
+	<button type="submit" value="search">search</button>
+
+<form method="get">
+	<fieldset>
+	<label for="firstname">
+		FIRST NAME
+	</label>
+	<input type="text" name="fname" id="firstname" placeholder="robert jhonson" >
+	<div id="1">
+	<LABEL>WHATS YOUR AGE</LABEL>
+	<input type="number" name="age" min="5" id="age">
+	<label>password</label>
+	<input type="password" name="pwd" id="pwd">
+	<label >gender</label>
+	<label for="gen">male</label>
+	<input type="radio" name="gen" id="gen" value="male" 
+	>
+	<label for="der">female</label>
+	<input type="radio" name="der" id="der" value="female" 
+	>
+	<label for="subjects">subject</label>
+	<input list="subject" name="subjects" id="subjects">
+	<datalist id="subject">
+	<option value="html">html</option>
+	<option value="java">java</option>
+	<option value="python">python</option>
+	<option value="arduiono/C++">arduiono/C++</option>
+</datalist>
+	<label for="em">email</label>
+	<input type="email" name="em"
+	id="em">
+	<label for="dob">date of birth</label>
+	<input type="date" name="dob">
+	<input type="submit" value="registar">
+</form>
+</div>
+<button type="reset">reset the values</button>
+</fieldset>
+</body>
+</html>
+	
